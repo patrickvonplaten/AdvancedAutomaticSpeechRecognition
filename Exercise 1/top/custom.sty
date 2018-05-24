@@ -1,0 +1,123 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{custom}[2014/05/11 Custom Package]
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyphsubst}
+\HyphSubstLet{english}{usenglishmax}
+\usepackage[english]{babel}
+
+\usepackage{titlepic}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{pgfplots}
+
+\usepackage{tcolorbox}
+
+\usepackage[version=3]{mhchem}
+\usepackage{chemfig}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+\usepackage{graphicx} 
+\usepackage[top=3cm, bottom=3cm, left=3cm , right=3cm]{geometry}
+%\usepackage{setspace} %doublespace, onehalfspace
+\usepackage{siunitx}
+\usepackage{here}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes,arrows}
+
+\usepackage{tabularx}
+\usepackage{url} 
+\usepackage{tocloft} %spacing in list of figures
+
+\definecolor{mygreen}{rgb}{0,0.5,0}
+\definecolor{venetianred}{rgb}{0.78, 0.03, 0.08}
+
+\usepackage{listings} %input code
+\lstset{
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  basicstyle=\rm\small\ttfamily,
+  keywordstyle=\bfseries\color{venetianred},
+  frame=single,
+  commentstyle=\color{gray}=small,
+  stringstyle=\color{mygreen},
+  backgroundcolor=\color{gray!10},
+  %tabsize=2,
+  rulecolor=\color{black!30},
+  %title=\lstname,
+  breaklines=true,
+  framextopmargin=2pt,
+  framexbottommargin=2pt,
+  extendedchars=true,
+  showstringspaces=false,
+}
+
+% additional keywords for python
+\lstset{emph={%  
+    as%
+    },emphstyle={\bfseries\color{red}}%
+}%
+
+%\usepackage{multibbl} %multiplebibliography
+
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks   = true,
+     linkcolor    = blue,
+     citecolor    = gray
+}
+\hypersetup{urlcolor=black}
+
+\usepackage[babel=true]{csquotes}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{pdfpages}
+\usepackage{epstopdf}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+% Theoremes
+\theoremstyle{definition}
+\newtheorem{mydef}{Définition}
+\newtheorem{myexem}[mydef]{Exemple}
+\newtheorem{mynota}[mydef]{Notation}
+\newtheorem{myrem}[mydef]{Remarque}
+
+\theoremstyle{plain}
+\newtheorem{mytheo}[mydef]{Théorème}
+\newtheorem{myprop}[mydef]{Propriété}
+
+\DeclareMathOperator{\newdiff}{d}
+\newcommand{\dif}{\newdiff\!}
+\newcommand{\ddfrac}[2]{\frac{\dif #1}{\dif #2}}
+
+\newcommand{\df}[1]{f^{(#1)}}
+
+\newcommand{\sub}[1]{_{\text{#1}}}
+\newcommand{\reels}{\mathbb{R}}
+\DeclareMathOperator\erf{erf}
+
+% \usepackage{minted}
+\usepackage{xcolor}
+
+\usepackage[bottom]{footmisc}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% Ajoute de l’espace entre les paragraphes et mets l’ indentation à 0
+\usepackage{parskip}
+\linespread{1.05}
+\setlength{\parskip}{.3em plus.1em minus.1em}
+\setlength{\parindent}{15pt}
+
+
+
+\endinput

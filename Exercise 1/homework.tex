@@ -1,0 +1,42 @@
+\documentclass[12pt,oneside,a4paper]{article}
+
+\usepackage{./top/custom}
+
+\newcommand{\todo}[1]{[{\color{red} TODO : } #1]}
+
+\newcommand{\prob}{\mathbb{P}}
+\renewcommand{\labelitemi}{$\bullet$}
+\addto\captionsenglish{
+  \renewcommand{\labelitemi}{$\bullet$}
+}
+% \usepackage[backend=biber]{biblatex}
+% \addbibresource{./biblio.bib}
+
+\begin{document}
+% title (fold)
+\begin{center}
+{\LARGE \bfseries 
+ 1. Exercise Sheet  \\[0.1cm] 
+}
+{ \large \bfseries
+ Advanced Automatic Speech Recognition \\[0.3cm] % (if uncommented, switch above to [0.1cm])
+}
+{\large
+  \textsc{RWTH Aachen} --- Patrick von Platen ---\\[0.3cm]
+}
+{\normalsize
+  Prof. Dr.Ing H. \textsc{Ney} \\[0.92cm] % (if uncommented, switch 3rd premise to [0.3cm])
+}
+\end{center}
+% title (end)
+  
+\input{./src/exo1} \newpage
+\input{./src/exo2} \newpage
+
+% \addcontentsline{toc}{part}{References}
+% \nocite{*}
+% \hypersetup{urlcolor=black}
+% \printbibliography
+% \newpage
+
+\end{document}
