@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1527196629 "homework.tex" "auxFile/homework.pdf" "homework" 1527196633
+["pdflatex"] 1527198814 "homework.tex" "auxFile/homework.pdf" "homework" 1527198819
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -273,14 +273,14 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1484608876 1888048 f2c5faed5981a516f406b2ccc20bff71 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1484608957 3873397 9fb091d1d9e22f7bdeb909775804f391 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "auxFile/homework.aux" 1527196632 1161 ecb3115535ce069c0f538d93d317890e ""
-  "auxFile/homework.out" 1527196632 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "auxFile/homework.aux" 1527198817 1255 3ecfa3be77ac62925458435a421412c5 ""
+  "auxFile/homework.out" 1527198816 0 d41d8cd98f00b204e9800998ecf8427e ""
   "homework.tex" 1527194802 941 a4f6b53dae69c62f6dc34b44359fe9a3 ""
-  "src/exo1.tex" 1527196625 1606 ca4494222a91c5ddc4dc083043059306 ""
+  "src/exo1.tex" 1527198812 2529 9c90065ab769b1749f082dd288ffd9ab ""
   "src/exo2.tex" 1527194842 57 e1ac7728b1763d4cdf19492c3d2bacc3 ""
   "top/custom.sty" 1527194673 2650 ce46ce0717bfac56a61f90d9c377940e ""
   (generated)
   "auxFile/homework.aux"
+  "auxFile/homework.log"
   "auxFile/homework.pdf"
   "auxFile/homework.out"
-  "auxFile/homework.log"

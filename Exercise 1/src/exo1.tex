@@ -13,10 +13,10 @@ We know that the following equation holds
 Knowing that we have a bigram language model, we can derive: 
 
 \begin{align*}
-	\sum_{N=1}^{\infty} p(N) \sum_{w_1^{N}} p(w_1^{N}) &= \sum_{N=1}^{\infty} p(N) \sum_{w_1^{N}} \prod_{i = 1}^{\infty} p(w_i|w_{i-1}) \\ 
-	\text{(\textit{sum over all words in vocab} }	&= \sum_{N=1}^{\infty} p(N) \prod_{i = 1}^{\infty} \sum_{w_i}  p(w_i|w_{i-1}) \\ 
-	&= \sum_{N=1}^{\infty} p(N) \prod_{i = 1}^{\infty} 1 \\ 
-	&= \sum_{N=1}^{\infty} p(N) 1 \\ 
+	\sum_{N=1}^{\infty} p(N) \sum_{w_1^{N}} p(w_1^{N}) &= \sum_{N=1}^{\infty} p(N) \sum_{w_1^{N}} \prod_{i = 1}^{N} p(w_i|w_{i-1}) \\ 
+	\text{(\textit{sum over all words in vocab} }	&= \sum_{N=1}^{\infty} p(N) \prod_{i = 1}^{N} \sum_{w_i}  p(w_i|w_{i-1}) \\ 
+	&= \sum_{N=1}^{\infty} p(N) \prod_{i = 1}^{N} 1 \\ 
+	&= \sum_{N=1}^{\infty} p(N) \\ 
 	\text{(\textit{using equation \ref{eq:length_dist})} }	&= 1 
 \end{align*}
 
@@ -30,7 +30,7 @@ The sentence end token on language model allows for language model
 normalization on word level independent of the length of the sentence. 
 Without the sentence end token the following must always be true: 
 \[
-	\prod_{i=1}^{N} w_i = (\prod_{i=1}^{N-1} w_i) w_N \le \prod_{i=1}^{N-1}
+	\prod_{i=1}^{N} w_i = (\prod_{i=1}^{N-1} w_i) w_N \le \prod_{i=1}^{N-1} w_i
 \]
 
 The above equation logically holds, but having a corpus with a finite 
@@ -45,4 +45,25 @@ level
 	\sum_{w \in \mathbb{V} \cup \{\$\}} p(w|v) = 1, \forall v \in \mathbb{V}
 \]
 
+\subsubsection*{ii)}%
+\label{ssub:ii_}
+
+
+\begin{align*}
+	\sum_{N=1}^{\infty}  \sum_{w_{1}^{N}: w_N = \$, w_n \in \mathbb{V}, \forall n = 1,...,N-1} p(w_1^{N}) &= \sum_{N=1}^{\infty}  \sum_{w_{1}^{N}: w_N = \$, w_n \in \mathbb{V}, \forall n = 1,...,N-1} \prod_{i = 1}^{N} p(w_i|w_{i-1})  \\
+	 &= \sum_{N=1}^{\infty}  \prod_{i = 1}^{N-1} (\sum_{w_i} p(w_i|w_{i-1})) p(\$|w_{i-1}))  \\
+	 &= \sum_{N=1}^{\infty}  \prod_{i = 1}^{N-1} (\sum_{w_i} p(w_i|w_{i-1})) p(\$)  \\
+	\text{(\textit{using assumption}) }  &= \sum_{N=1}^{\infty}  \prod_{i = 1}^{N-1} (1-p(\$)) p(\$)  \\
+	 &= \sum_{N=1}^{\infty}  (1-p(\$))^{N-1} p(\$)  \\
+	\text{(\textit{using geometric series}) }	 &= \frac{1}{1 - (1 -p(\$))} p(\$)  \\
+	 &= 1
+\end{align*}
+
+\subsubsection*{iii)}%
+\label{ssub:iii_}
+
+We can imply from ii) that 
+\[
+	p(N) = \sum_{w_{1}^{N}: w_N = \$, w_n \in \mathbb{V}, \forall n = 1,...,N-1} \prod_{i = 1}^{N} p(w_i|w_{i-1}) = (1-p(\$))^{N-1} p(\$) 
+\]
 
