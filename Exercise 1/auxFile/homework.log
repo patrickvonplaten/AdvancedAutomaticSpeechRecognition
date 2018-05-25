@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.17)  24 MAY 2018 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.17)  25 MAY 2018 12:36
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1839,6 +1839,9 @@ Package csquotes Info: ... found 'babel' package.
 
 LaTeX Warning: Label `sec:section_name' multiply defined.
 
+
+LaTeX Warning: Label `sub:a' multiply defined.
+
 )
 \openout1 = `homework.aux'.
 
@@ -2042,7 +2045,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  (./src/exo1.tex [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-[2] (./src/exo2.tex) [3]
+[2] (./src/exo2.tex
+Overfull \hbox (36.21178pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/n/12 Assuming that the lan-guage model uses a bi-gram and that the m
+odel $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 w[]; t[]\OMS/cmsy/m/n
+/12 j\OML/cmm/m/it/12 t[]; w[]; x[]\OT1/cmr/m/n/12 )$
+ []
+
+[3]) [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (auxFile/homework.aux)
@@ -2056,13 +2066,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 46639 strings out of 493014
- 1075156 string characters out of 6133351
- 1260336 words of memory out of 5000000
- 49473 multiletter control sequences out of 15000+600000
+ 46652 strings out of 493014
+ 1075293 string characters out of 6133351
+ 1261413 words of memory out of 5000000
+ 49481 multiletter control sequences out of 15000+600000
  14161 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,10n,79p,10371b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,14n,79p,10371b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
@@ -2073,13 +2083,14 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on auxFile/homework.pdf (3 pages, 120133 bytes).
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on auxFile/homework.pdf (4 pages, 134661 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

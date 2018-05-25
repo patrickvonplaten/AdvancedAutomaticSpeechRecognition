@@ -50,7 +50,7 @@ level
 
 
 \begin{align*}
-	\sum_{N=1}^{\infty}  \sum_{w_{1}^{N}: w_N = \$, w_n \in \mathbb{V}, \forall n = 1,...,N-1} p(w_1^{N}) &= \sum_{N=1}^{\infty}  \sum_{w_{1}^{N}: w_N = \$, w_n \in \mathbb{V}, \forall n = 1,...,N-1} \prod_{i = 1}^{N} p(w_i|w_{i-1})  \\
+	\sum_{N=1}^{\infty}  \sum_{\substack{w_{1}^{N}: w_N = \$ \\ w_n \in \mathbb{V}, \forall n = 1,...,N-1}} p(w_1^{N}) &= \sum_{N=1}^{\infty}  \sum_{\substack{w_{1}^{N}: w_N = \$ \\ w_n \in \mathbb{V}, \forall n = 1,...,N-1}} \prod_{i = 1}^{N} p(w_i|w_{i-1})  \\
 	 &= \sum_{N=1}^{\infty}  \prod_{i = 1}^{N-1} (\sum_{w_i} p(w_i|w_{i-1})) p(\$|w_{i-1}))  \\
 	 &= \sum_{N=1}^{\infty}  \prod_{i = 1}^{N-1} (\sum_{w_i} p(w_i|w_{i-1})) p(\$)  \\
 	\text{(\textit{using assumption}) }  &= \sum_{N=1}^{\infty}  \prod_{i = 1}^{N-1} (1-p(\$)) p(\$)  \\

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1527198814 "homework.tex" "auxFile/homework.pdf" "homework" 1527198819
+["pdflatex"] 1527244585 "homework.tex" "auxFile/homework.pdf" "homework" 1527244588
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -39,6 +39,7 @@
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
@@ -273,14 +274,14 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1484608876 1888048 f2c5faed5981a516f406b2ccc20bff71 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1484608957 3873397 9fb091d1d9e22f7bdeb909775804f391 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "auxFile/homework.aux" 1527198817 1255 3ecfa3be77ac62925458435a421412c5 ""
-  "auxFile/homework.out" 1527198816 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "auxFile/homework.aux" 1527244588 1428 c1678c30b8eeec2b5792dfc8a0403aac ""
+  "auxFile/homework.out" 1527244587 0 d41d8cd98f00b204e9800998ecf8427e ""
   "homework.tex" 1527194802 941 a4f6b53dae69c62f6dc34b44359fe9a3 ""
-  "src/exo1.tex" 1527198812 2529 9c90065ab769b1749f082dd288ffd9ab ""
-  "src/exo2.tex" 1527194842 57 e1ac7728b1763d4cdf19492c3d2bacc3 ""
+  "src/exo1.tex" 1527241180 2555 3e45f37135f60c904b8d0f053c12177a ""
+  "src/exo2.tex" 1527244580 2103 8c1f0fcf9eda724af4799c31d269db3c ""
   "top/custom.sty" 1527194673 2650 ce46ce0717bfac56a61f90d9c377940e ""
   (generated)
-  "auxFile/homework.aux"
   "auxFile/homework.log"
   "auxFile/homework.pdf"
+  "auxFile/homework.aux"
   "auxFile/homework.out"
