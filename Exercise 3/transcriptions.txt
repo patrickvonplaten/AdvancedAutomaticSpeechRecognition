@@ -1,0 +1,10 @@
+;; CATEGORY "0" "Condition" ""
+;; LABEL "o" "Overall" "Overall"
+;;
+;; CATEGORY "1" "Speaker Sex" ""
+;; LABEL "unk"   "Unknown" ""
+QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD 1 speaker_1_unknown 1.151 14.843 <o,unk> thanks for taking the time to download this BBC radio five live podcast to find other programmes you might be interested in click BBC dot co dot UK slash five live where you'll also find our terms of use
+QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD 1 Nicky_Campbell_unknown 16.353 24.761 <o,unk> this is nicky campbell and this is the podcast of your call where you have your say we're live every weekday from nine AM so don't phone or text in now
+QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD 1 Nicky_Campbell_unknown 24.761 44.466 <o,unk> we're talking this morning about the cot death storyline running on eastenders at the moment i- i- influential parenting website mumsnet has written to the BBC in very strong terms to complain about the  irresponsible and unintelligent way the soap por- portrayed a mother's reaction to the tragic loss of a child  as they put it 
+QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD 1 Nicky_Campbell_unknown 44.466 63.151 <o,unk> they've had thousands of posts about the storyline and  here's just one of them ea- eastenders has a near constant theme of women who have had traumas happen to them being permanently damaged incapable of healthy relationships and bound to suffer from mental illness this is misogynistic and a horrible stereotype to propagate not to mention inaccurate
+QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD 1 Nicky_Campbell_unknown 63.151 78.481 <o,unk> well here's what the executive producer of eastenders bryan kirkwood had to say about the baby swap plot  we appreciate this is a challenging storyline and have taken care to ensure viewers were aware of the content in advance of transmission
