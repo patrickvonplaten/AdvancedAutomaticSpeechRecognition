@@ -6,6 +6,8 @@ transcriptionTxtFilePath='./transcriptions.txt'
 plainText=$(sed '/;;/d' ${transcriptionTxtFilePath} | sed 's/^.*<o,unk>//')
 numberOfWords=$(echo ${plainText} | wc -w)
 
+echo $numberOfWords
+
 sumArcs=0
 for fileName in ./lattice*; do
 	arcs=$(cat ${fileName} | zgrep "LINKS" | sed 's/^.*=//')

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import gzip
 import math
+import sys
 import os
 from operator import attrgetter
 
@@ -44,22 +45,28 @@ class Edge(object):
 
 class WordGraph(object):
 
-    def __init__(self, latticeFilePath, startTime, code, resultFilePath):
+    def __init__(self, latticeFilePath, startTime, code, resultFilePath, pruningThreshold, lmScale):
         self.nodes = []
         self.edges = []
         self.encodedResults = []
-        self.lmScale = None 
+        self.lmScale = lmScale 
         self.numNodes = None
         self.numEdges = None
         self.fullPathProb = None
         self.startTime = float(startTime)
         self.endTime = None
+        self.bestNegativeLogPosteriorProb = None
+        self.pruningThreshold = pruningThreshold
         self.code = code
         self.resultFilePath = resultFilePath
         self.parseLattice(latticeFilePath)
         self.runForwardBackwardAlgorithm()
+        self.pruneWordGraph()
         self.encodeWordGraph()
         self.writeResultsToCTMFile()
+
+    def getWordGraphDensity(self):
+        return self.numEdges/float(self.words)
 
     def parseLattice(self, latticeFilePath):
         with gzip.open(latticeFilePath, 'rb') as file:
@@ -74,7 +81,8 @@ class WordGraph(object):
                 elif(lineType == 'node'):
                      self.nodes.append(self.parseNode(line))
                 elif(lineType == 'lmScale'):
-                     self.lmScale = self.parseLmScale(line)
+                    if(self.lmScale == None):
+                        self.lmScale = self.parseLmScale(line)
         self.numNodes = len(self.nodes)
         self.numEdges = len(self.edges)
 
@@ -111,8 +119,13 @@ class WordGraph(object):
         assert math.isclose(self.nodes[0].backwardProb, self.nodes[-1].forwardProb, abs_tol=1e-6), "Probability should be the same!"
         self.fullPathProb = self.nodes[0].backwardProb
 
+        bestNegativeLogPosteriorProb = float('inf')
         for edge in self.edges:
-            edge.setNegativeLogPosteriorProb(self.nodes[edge.nodeFrom].forwardProb + edge.weight + self.nodes[edge.nodeTo].backwardProb - self.fullPathProb)
+            negativeLogPosteriorProb = self.nodes[edge.nodeFrom].forwardProb + edge.weight + self.nodes[edge.nodeTo].backwardProb - self.fullPathProb
+            edge.setNegativeLogPosteriorProb(negativeLogPosteriorProb)
+            if(negativeLogPosteriorProb < bestNegativeLogPosteriorProb):
+                bestNegativeLogPosteriorProb = negativeLogPosteriorProb
+        self.bestNegativeLogPosteriorProb = bestNegativeLogPosteriorProb
 
     def calculateProbability(self, nodes, probabilityType, nameOfEdgesList, nodeType):
         for node in nodes[1:]:
@@ -143,6 +156,13 @@ class WordGraph(object):
             self.encodedResults.append(((bestEdge.word[1:-1]), round(timeEnd, 3), round(timeDiff, 3)))
         self.endTime = timeEnd
 
+    def pruneWordGraph(self):
+        for idx, edge in enumerate(self.edges):
+            threshold = self.bestNegativeLogPosteriorProb + self.pruningThreshold
+            if(edge.posteriorProb > threshold):
+                del self.edges[idx]
+        self.numEdges = len(self.edges)
+
     def writeResultsToCTMFile(self):
         with open(self.resultFilePath, 'a') as resultFile:
             resultFile.write(";; <name> <track> <start> <duration> <word>\n")
@@ -161,11 +181,17 @@ class WordGraph(object):
 
 
 if __name__ == "__main__":
+    pruningThreshold = float(sys.argv[1])
+    lmScale = float(sys.argv[2])
+    numWords = int(sys.argv[3])
+
     open('results.ctm', 'a').close()
     os.remove('results.ctm')
-    wg = WordGraph('lattice.1.htk.gz', 0, '_0000001151_0000014843', 'results.ctm')
-    wg = WordGraph('lattice.2.htk.gz', wg.endTime, '_0000016353_0000024761', 'results.ctm')
-    wg = WordGraph('lattice.3.htk.gz', wg.endTime , '_0000024761_0000044466', 'results.ctm')
-    wg = WordGraph('lattice.4.htk.gz', wg.endTime, '_0000044466_0000063151', 'results.ctm')
-    wg = WordGraph('lattice.5.htk.gz', wg.endTime, '_0000063151_0000078481', 'results.ctm')
-    
+
+    wg1 = WordGraph('lattice.1.htk.gz', 0, '_0000001151_0000014843', 'results.ctm', pruningThreshold, lmScale)
+    wg2 = WordGraph('lattice.2.htk.gz', wg1.endTime, '_0000016353_0000024761', 'results.ctm', pruningThreshold, lmScale)
+    wg3 = WordGraph('lattice.3.htk.gz',wg2.endTime, '_0000024761_0000044466', 'results.ctm', pruningThreshold, lmScale)
+    wg4 = WordGraph('lattice.4.htk.gz', wg3.endTime, '_0000044466_0000063151', 'results.ctm', pruningThreshold, lmScale)
+    wg5 = WordGraph('lattice.5.htk.gz', wg4.endTime, '_0000063151_0000078481', 'results.ctm', pruningThreshold, lmScale)
+   
+    print("Word Graph Density",(wg1.numEdges + wg2.numEdges + wg3.numEdges + wg4.numEdges + wg5.numEdges)/float(numWords))
