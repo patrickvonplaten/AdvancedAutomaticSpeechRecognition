@@ -164,3 +164,8 @@ if __name__ == "__main__":
     open('results.ctm', 'a').close()
     os.remove('results.ctm')
     wg = WordGraph('lattice.1.htk.gz', 0, '_0000001151_0000014843', 'results.ctm')
+    wg = WordGraph('lattice.2.htk.gz', wg.endTime, '_0000016353_0000024761', 'results.ctm')
+    wg = WordGraph('lattice.3.htk.gz', wg.endTime , '_0000024761_0000044466', 'results.ctm')
+    wg = WordGraph('lattice.4.htk.gz', wg.endTime, '_0000044466_0000063151', 'results.ctm')
+    wg = WordGraph('lattice.5.htk.gz', wg.endTime, '_0000063151_0000078481', 'results.ctm')
+    
