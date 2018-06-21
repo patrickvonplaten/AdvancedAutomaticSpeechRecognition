@@ -161,5 +161,6 @@ class WordGraph(object):
 
 
 if __name__ == "__main__":
+    open('results.ctm', 'a').close()
     os.remove('results.ctm')
     wg = WordGraph('lattice.1.htk.gz', 0, '_0000001151_0000014843', 'results.ctm')
