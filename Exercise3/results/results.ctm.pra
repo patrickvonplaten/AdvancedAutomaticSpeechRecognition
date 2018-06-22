@@ -1,0 +1,58 @@
+
+
+		DUMP OF SYSTEM ALIGNMENT STRUCTURE
+
+System name:   results.ctm
+
+Speakers: 
+    0:  speaker_1_unknown
+    1:  nicky_campbell_unknown
+
+Speaker sentences   0:  speaker_1_unknown   #utts: 1
+id: (speaker_1_unknown-000)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 37 2 0 2
+REF:  thanks FOR taking the time to download this bbc radio five live podcast to find other PROGRAMMES you might be interested in * click bbc dot co dot uk ** slash five live where you'll also find our terms of use 
+HYP:  thanks TO  taking the time to download this bbc radio five live podcast to find other PROGRAMS   you might be interested in A click bbc dot co dot uk TO slash five live where you'll also find our terms of use 
+Eval:        S                                                                              S                                     I                         I                                                          
+
+Speaker sentences   1:  nicky_campbell_unknown   #utts: 4
+id: (nicky_campbell_unknown-000)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 16 0 15 0
+REF:  this is nicky campbell and this is the podcast of your call where you have your SAY WE'RE LIVE EVERY WEEKDAY FROM NINE AM SO DON'T PHONE OR TEXT IN NOW 
+HYP:  this is nicky campbell and this is the podcast of your call where you have your *** ***** **** ***** ******* **** **** ** ** ***** ***** ** **** ** *** 
+Eval:                                                                                 D   D     D    D     D       D    D    D  D  D     D     D  D    D  D   
+
+id: (nicky_campbell_unknown-001)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 29 2 25 18
+REF:  *** **** **** ***** ******* **** **** ** ** ***** ***** ** **** ** *** *** ***** WE'RE talking this morning about the cot death ***** STORYLINE running on eastenders at the moment I- I- influential parenting website mumsnet has written to the bbc IN very strong terms to complain about THE IRRESPONSIBLE AND UNINTELLIGENT WAY THE SOAP POR- PORTRAYED A MOTHER'S REACTION TO the TRAGIC LOSS OF A CHILD AS THEY PUT IT 
+HYP:  SAY WELL LIVE EVERY WEEKDAY FROM NINE AM SO DON'T PHONE OR TEXT IN NOW ALL THERE WERE  talking this morning about the cot death STORY LINE      running on eastenders at the moment ** ** influential parenting website mumsnet has written to the bbc ** very strong terms to complain about *** ************* *** ************* *** *** **** **** ********* * ******** ******** ** the ****** **** ** * ***** ** **** *** ** 
+Eval: I   I    I    I     I       I    I    I  I  I     I     I  I    I  I   I   I     S                                              I     S                                             D  D                                                               D                                      D   D             D   D             D   D   D    D    D         D D        D        D      D      D    D  D D     D  D    D   D  
+
+id: (nicky_campbell_unknown-002)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 5 17 35 0
+REF:  THEY'VE HAD THOUSANDS OF POSTS ABOUT THE STORYLINE     and HERE'S JUST ONE           OF  THEM EA- EASTENDERS HAS      a NEAR CONSTANT THEME OF WOMEN WHO HAVE HAD TRAUMAS  HAPPEN   to THEM BEING PERMANENTLY DAMAGED INCAPABLE of HEALTHY RELATIONSHIPS AND BOUND TO SUFFER FROM MENTAL ILLNESS THIS IS MISOGYNISTIC AND a HORRIBLE STEREOTYPE TO PROPAGATE NOT TO   MENTION INACCURATE 
+HYP:  ******* *** ********* ** ***** ***** *** IRRESPONSIBLE and ****** **** UNINTELLIGENT WAY THIS SO  PRETTY     BETRAYED a **** ******** ***** ** ***** *** **** *** MOTHER'S REACTION to **** ***** THE         TRAGIC  LOSS      of ******* ************* *** ***** ** ****** **** ****** ******* **** ** ************ *** a ******** ********** ** CHILD     AS  THEY PUT     IT         
+Eval: D       D   D         D  D     D     D   S                 D      D    S             S   S    S   S          S          D    D        D     D  D     D   D    D   S        S           D    D     S           S       S            D       D             D   D     D  D      D    D      D       D    D  D            D     D        D          D  S         S   S    S       S          
+
+id: (nicky_campbell_unknown-003)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 41 0 0 58
+REF:  ******* *** ********* ** ***** ***** *** ***** **** *** ****** **** *** ** **** ** ****** *** * **** ******** ***** ** ***** *** **** *** ******* ******** ** **** ***** *********** ******* ********* ** ******* ************* *** ***** ** ****** **** ****** ******* **** ** ************ *** * ******** ********** ** ********* *** ** ******* ********** well here's what the executive producer of eastenders bryan kirkwood had to say about the baby swap plot we appreciate this is a challenging storyline and have taken care to ensure viewers were aware of the content in advance of transmission 
+HYP:  THEY'VE HAD THOUSANDS OF POSTS ABOUT THE STORY LINE AND HERE'S JUST ONE OF THEM IS TENNIS HAS A NEAR CONSTANT THEME OF WOMEN WHO HAVE HAD TRAUMAS HAPPENED TO THEM BEING PERMANENTLY DAMAGED INCAPABLE OF HEALTHY RELATIONSHIPS AND BOUND TO SUFFER FROM MENTAL ILLNESS THIS IS MISOGYNISTIC AND A HORRIBLE STEREOTYPE TO PROPAGATE NOT TO MENTION INACCURATE well here's what the executive producer of eastenders bryan kirkwood had to say about the baby swap plot we appreciate this is a challenging storyline and have taken care to ensure viewers were aware of the content in advance of transmission 
+Eval: I       I   I         I  I     I     I   I     I    I   I      I    I   I  I    I  I      I   I I    I        I     I  I     I   I    I   I       I        I  I    I     I           I       I         I  I       I             I   I     I  I      I    I      I       I    I  I            I   I I        I          I  I         I   I  I       I                                                                                                                                                                                                                                                            
+
+
