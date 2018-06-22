@@ -14,8 +14,9 @@ Knowing that we have a bigram language model, we can derive:
 
 \begin{align*}
 	\sum_{N=1}^{\infty} p(N) \sum_{w_1^{N}} p(w_1^{N}) &= \sum_{N=1}^{\infty} p(N) \sum_{w_1^{N}} \prod_{i = 1}^{N} p(w_i|w_{i-1}) \\ 
-	\text{(\textit{sum over all words in vocab} }	&= \sum_{N=1}^{\infty} p(N) \prod_{i = 1}^{N} \sum_{w_i}  p(w_i|w_{i-1}) \\ 
-	&= \sum_{N=1}^{\infty} p(N) \prod_{i = 1}^{N} 1 \\ 
+	\sum_{N=1}^{\infty} p(N) \sum_{w_1^{N}} p(w_1^{N}) &= \sum_{N=1}^{\infty} p(N) \sum_{w_1^{N-1}} \prod_{i = 1}^{N-1} p(w_i|w_{i-1})\sum_{w_N} p(w_N|w_{N-1}) \\ 
+	\sum_{N=1}^{\infty} p(N) \sum_{w_1^{N}} p(w_1^{N}) &= \sum_{N=1}^{\infty} p(N) \sum_{w_1^{N-1}} \prod_{i = 1}^{N-1} p(w_i|w_{i-1}) 1 \\ 
+	\text{(\textit{... recursively}) }	&= \sum_{N=1}^{\infty} p(N) \prod_{i = 1}^{N} 1 \\ 	
 	&= \sum_{N=1}^{\infty} p(N) \\ 
 	\text{(\textit{using equation \ref{eq:length_dist})} }	&= 1 
 \end{align*}
@@ -51,12 +52,16 @@ level
 
 \begin{align*}
 	\sum_{N=1}^{\infty}  \sum_{\substack{w_{1}^{N}: w_N = \$ \\ w_n \in \mathbb{V}, \forall n = 1,...,N-1}} p(w_1^{N}) &= \sum_{N=1}^{\infty}  \sum_{\substack{w_{1}^{N}: w_N = \$ \\ w_n \in \mathbb{V}, \forall n = 1,...,N-1}} \prod_{i = 1}^{N} p(w_i|w_{i-1})  \\
-	 &= \sum_{N=1}^{\infty}  \prod_{i = 1}^{N-1} (\sum_{w_i} p(w_i|w_{i-1})) p(\$|w_{i-1}))  \\
-	 &= \sum_{N=1}^{\infty}  \prod_{i = 1}^{N-1} (\sum_{w_i} p(w_i|w_{i-1})) p(\$)  \\
-	\text{(\textit{using assumption}) }  &= \sum_{N=1}^{\infty}  \prod_{i = 1}^{N-1} (1-p(\$)) p(\$)  \\
-	 &= \sum_{N=1}^{\infty}  (1-p(\$))^{N-1} p(\$)  \\
-	\text{(\textit{using geometric series}) }	 &= \frac{1}{1 - (1 -p(\$))} p(\$)  \\
-	 &= 1
+	&= \sum_{N=1}^{\infty} \sum_{w_{1}^{N-1},w_n \in \mathbb{V}} \prod_{i = 1}^{N-1} (p(w_i|w_{i-1})) p(\$|w_{i-1})  \\
+	&= \sum_{N=1}^{\infty} \sum_{w_{1}^{N-1},w_n \in \mathbb{V}} \prod_{i = 1}^{N-1} (p(w_i|w_{i-1})) p(\$)  \\
+	&= \sum_{N=1}^{\infty} \sum_{w_{1}^{N-2},w_n \in \mathbb{V}} \prod_{i = 1}^{N-2} (p(w_i|w_{i-1})\sum_{w_{N-1}} p(w_{N-1}|w_{N-2})) p(\$)  \\
+	&= \sum_{N=1}^{\infty} \sum_{w_{1}^{N-2},w_n \in \mathbb{V}} \prod_{i = 1}^{N-2} (p(w_i|w_{i-1})(1-p(\$)) p(\$)  \\
+\text{(\textit{... recursively})} 
+	&= \sum_{N=1}^{\infty} (1-p(\$))^{N-1} p(\$)  \\
+	&= \sum_{N=1}^{\infty}  (1-p(\$))^{N-1} p(\$)  \\
+\text{(\textit{using geometric series}) }
+	&= \frac{1}{1 - (1 -p(\$))} p(\$)  \\
+  	&= 1
 \end{align*}
 
 \subsubsection*{iii)}%

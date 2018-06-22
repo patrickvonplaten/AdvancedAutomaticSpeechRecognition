@@ -3,7 +3,7 @@ numWords=$(./getWordGraphDensity.sh)
 lmScale=50
 lmScaleOptStep=64
 lmScaleOpt=${lmScale}
-pruningThreshold=1000
+pruningThreshold=500
 
 ./decodeWordGraphs.py ${pruningThreshold} ${lmScale} ${numWords}
 ./getWer.sh

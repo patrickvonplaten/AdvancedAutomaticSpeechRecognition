@@ -1,0 +1,253 @@
+---------START DECODING---------
+Word Graph Density 593.5982142857143
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+---------START DECODING---------
+Word Graph Density 582.8705357142857
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+---------START DECODING---------
+Word Graph Density 651.8794642857143
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+777 777 777
+Best WER = 777 with lmScale = 50
+---------START DECODING---------
+Word Graph Density 585.9508928571429
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+---------START DECODING---------
+Word Graph Density 612.3973214285714
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+777 777 777
+Best WER = 777 with lmScale = 50
+---------START DECODING---------
+Word Graph Density 588.7991071428571
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+---------START DECODING---------
+Word Graph Density 602.4196428571429
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+768 786 777
+Best WER = 768 with lmScale = 42.0
+---------START DECODING---------
+Word Graph Density 597.21875
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+---------START DECODING---------
+Word Graph Density 607.3125
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+768 772 768
+Best WER = 768 with lmScale = 42.0
+---------START DECODING---------
+Word Graph Density 599.7008928571429
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+---------START DECODING---------
+Word Graph Density 604.8705357142857
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+768 763 768
+Best WER = 763 with lmScale = 44.0
+---------START DECODING---------
+Word Graph Density 598.4107142857143
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+---------START DECODING---------
+Word Graph Density 601.0401785714286
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+763 772 763
+Best WER = 763 with lmScale = 44.0
+---------START DECODING---------
+Word Graph Density 599.0089285714286
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+---------START DECODING---------
+Word Graph Density 600.3928571428571
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+763 768 763
+Best WER = 763 with lmScale = 44.0
+---------START DECODING---------
+Word Graph Density 599.4017857142857
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+---------START DECODING---------
+Word Graph Density 600.09375
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+763 763 763
+Best WER = 763 with lmScale = 44.0
+---------START DECODING---------
+Word Graph Density 599.7008928571429
+Pruning threshold 500.0
+---------DONE----------
+sclite: 2.10 TK Version 1.3
+Begin alignment of Ref File: 'transcriptions.stm' and Hyp File: 'results.ctm'
+    Performing alignments for file 'qrbc_eng_gb_20110106_104800_bbc_phonein_pod'.
+        1 of 5 Segments For Channel 1.             2 of 5 Segments For Channel 1.             3 of 5 Segments For Channel 1.             4 of 5 Segments For Channel 1.             5 of 5 Segments For Channel 1.     
+    Writing scoring report to 'results/results.ctm.sys'
+    Writing raw scoring report to 'results/results.ctm.raw'
+    Writing string alignments to 'results/results.ctm.pra'
+
+Successful Completion
+LmScale optimization done...
+================================
+Best final WER is = 76.3
