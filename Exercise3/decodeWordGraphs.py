@@ -39,9 +39,15 @@ class Edge(object):
         self.languageScore = languageScore
         self.weight = self.acousticScore + lmScale * self.languageScore
         self.posteriorProb = None
+        self.startTime = None
+        selt.endTime = None
 
     def setNegativeLogPosteriorProb(self, posteriorProb):
         self.posteriorProb = posteriorProb
+
+    def setStartEndTimes(self, nodes):
+        self.startTime = nodes[self.nodeFrom].time
+        self.endTime = nodes[self.nodeTo].time
 
 class WordGraph(object):
 
@@ -75,6 +81,7 @@ class WordGraph(object):
                 lineType = self.getLineType(line)
                 if(lineType == 'edge'):
                     edge = self.parseEdge(line)
+                    edge.setStartEndTimes(self.nodes)
                     self.nodes[edge.nodeFrom].addToOutgoingEdges(edge)
                     self.nodes[edge.nodeTo].addToIncomingEdges(edge)
                     self.edges.append(edge)
