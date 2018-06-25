@@ -196,11 +196,11 @@ if __name__ == "__main__":
     os.remove('results.ctm')
 
     print("---------START DECODING---------")
-    wg1 = WordGraph('lattice.1.htk.gz', 0, '_0000001151_0000014843', 'results.ctm', pruningThreshold, lmScale)
-    wg2 = WordGraph('lattice.2.htk.gz', wg1.endTime, '_0000016353_0000024761', 'results.ctm', pruningThreshold, lmScale)
-    wg3 = WordGraph('lattice.3.htk.gz',wg2.endTime, '_0000024761_0000044466', 'results.ctm', pruningThreshold, lmScale)
-    wg4 = WordGraph('lattice.4.htk.gz', wg3.endTime, '_0000044466_0000063151', 'results.ctm', pruningThreshold, lmScale)
-    wg5 = WordGraph('lattice.5.htk.gz', wg4.endTime, '_0000063151_0000078481', 'results.ctm', pruningThreshold, lmScale)
+    wg1 = WordGraph('lattice.1.htk.gz', 1.151, '_0000001151_0000014843', 'results.ctm', pruningThreshold, lmScale)
+    wg2 = WordGraph('lattice.2.htk.gz', 16.353 , '_0000016353_0000024761', 'results.ctm', pruningThreshold, lmScale)
+    wg3 = WordGraph('lattice.3.htk.gz', 24.761, '_0000024761_0000044466', 'results.ctm', pruningThreshold, lmScale)
+    wg4 = WordGraph('lattice.4.htk.gz', 44.466, '_0000044466_0000063151', 'results.ctm', pruningThreshold, lmScale)
+    wg5 = WordGraph('lattice.5.htk.gz', 63.151, '_0000063151_0000078481', 'results.ctm', pruningThreshold, lmScale)
    
     print("Word Graph Density",(wg1.numEdges + wg2.numEdges + wg3.numEdges + wg4.numEdges + wg5.numEdges)/float(numWords))
     print("Pruning threshold", pruningThreshold)
