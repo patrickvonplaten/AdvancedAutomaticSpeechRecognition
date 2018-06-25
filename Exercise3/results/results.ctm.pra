@@ -23,36 +23,36 @@ id: (nicky_campbell_unknown-000)
 Labels: <o,unk>
 File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
 Channel: 1
-Scores: (#C #S #D #I) 16 0 15 0
-REF:  this is nicky campbell and this is the podcast of your call where you have your SAY WE'RE LIVE EVERY WEEKDAY FROM NINE AM SO DON'T PHONE OR TEXT IN NOW 
-HYP:  this is nicky campbell and this is the podcast of your call where you have your *** ***** **** ***** ******* **** **** ** ** ***** ***** ** **** ** *** 
-Eval:                                                                                 D   D     D    D     D       D    D    D  D  D     D     D  D    D  D   
+Scores: (#C #S #D #I) 30 1 0 0
+REF:  this is nicky campbell and this is the podcast of your call where you have your say WE'RE live every weekday from nine am so don't phone or text in now 
+HYP:  this is nicky campbell and this is the podcast of your call where you have your say WELL  live every weekday from nine am so don't phone or text in now 
+Eval:                                                                                     S                                                                   
 
 id: (nicky_campbell_unknown-001)
 Labels: <o,unk>
 File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
 Channel: 1
-Scores: (#C #S #D #I) 29 3 24 17
-REF:  *** **** **** ***** ******* **** **** ** ** ***** ***** ** **** ** *** ***** WE'RE talking this morning about the cot death ***** STORYLINE running on eastenders at the moment I- I- influential parenting website mumsnet has written to the bbc IN very strong terms to complain about THE IRRESPONSIBLE AND UNINTELLIGENT WAY THE SOAP POR- PORTRAYED A MOTHER'S REACTION TO the TRAGIC LOSS OF A CHILD AS THEY PUT IT 
-HYP:  SAY WELL LIVE EVERY WEEKDAY FROM NINE AM SO DON'T PHONE OR TEXT IN NOW THERE WERE  talking this morning about the cot death STORY LINE      running on eastenders at the moment ** OF influential parenting website mumsnet has written to the bbc ** very strong terms to complain about *** ************* *** ************* *** *** **** **** ********* * ******** ******** ** the ****** **** ** * ***** ** **** *** ** 
-Eval: I   I    I    I     I       I    I    I  I  I     I     I  I    I  I   I     S                                              I     S                                             D  S                                                               D                                      D   D             D   D             D   D   D    D    D         D D        D        D      D      D    D  D D     D  D    D   D  
+Scores: (#C #S #D #I) 48 6 2 2
+REF:  ***** WE'RE talking this morning about the cot death ***** STORYLINE running on eastenders at the moment I- I- influential parenting website mumsnet has written to the bbc IN very strong terms to complain about the irresponsible and unintelligent WAY  the soap POR-   PORTRAYED a mother's reaction to the tragic loss of a child as they put it 
+HYP:  THERE WERE  talking this morning about the cot death STORY LINE      running on eastenders at the moment ** OF influential parenting website mumsnet has written to the bbc ** very strong terms to complain about the irresponsible and unintelligent AWAY the soap OPERAS BETRAYED  a mother's reaction to the tragic loss of a child as they put it 
+Eval: I     S                                              I     S                                             D  S                                                               D                                                                          S             S      S                                                                          
 
 id: (nicky_campbell_unknown-002)
 Labels: <o,unk>
 File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
 Channel: 1
-Scores: (#C #S #D #I) 5 17 35 0
-REF:  THEY'VE HAD THOUSANDS OF POSTS ABOUT THE STORYLINE     and HERE'S JUST ONE           OF   THEM EA-  EASTENDERS HAS      a NEAR CONSTANT THEME OF WOMEN WHO HAVE HAD TRAUMAS  HAPPEN   to THEM BEING PERMANENTLY DAMAGED INCAPABLE of HEALTHY RELATIONSHIPS AND BOUND TO SUFFER FROM MENTAL ILLNESS THIS IS MISOGYNISTIC AND a HORRIBLE STEREOTYPE TO PROPAGATE NOT TO   MENTION INACCURATE 
-HYP:  ******* *** ********* ** ***** ***** *** IRRESPONSIBLE and ****** **** UNINTELLIGENT AWAY THE  SOAP OPERAS     BETRAYED a **** ******** ***** ** ***** *** **** *** MOTHER'S REACTION to **** ***** THE         TRAGIC  LOSS      of ******* ************* *** ***** ** ****** **** ****** ******* **** ** ************ *** a ******** ********** ** CHILD     AS  THEY PUT     IT         
-Eval: D       D   D         D  D     D     D   S                 D      D    S             S    S    S    S          S          D    D        D     D  D     D   D    D   S        S           D    D     S           S       S            D       D             D   D     D  D      D    D      D       D    D  D            D     D        D          D  S         S   S    S       S          
+Scores: (#C #S #D #I) 54 2 1 1
+REF:  they've had thousands of posts about the ***** STORYLINE and here's just one of them EA- eastenders has a near constant theme of women who have had traumas HAPPEN   to them being permanently damaged incapable of healthy relationships and bound to suffer from mental illness this is misogynistic and a horrible stereotype to propagate not to mention inaccurate 
+HYP:  they've had thousands of posts about the STORY LINE      and here's just one of them *** eastenders has a near constant theme of women who have had traumas HAPPENED to them being permanently damaged incapable of healthy relationships and bound to suffer from mental illness this is misogynistic and a horrible stereotype to propagate not to mention inaccurate 
+Eval:                                          I     S                                     D                                                                      S                                                                                                                                                                                                           
 
 id: (nicky_campbell_unknown-003)
 Labels: <o,unk>
 File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
 Channel: 1
-Scores: (#C #S #D #I) 41 0 0 57
-REF:  ******* *** ********* ** ***** ***** *** ***** **** *** ****** **** *** ** **** ********** *** * **** ******** ***** ** ***** *** **** *** ******* ******** ** **** ***** *********** ******* ********* ** ******* ************* *** ***** ** ****** **** ****** ******* **** ** ************ *** * ******** ********** ** ********* *** ** ******* ********** well here's what the executive producer of eastenders bryan kirkwood had to say about the baby swap plot we appreciate this is a challenging storyline and have taken care to ensure viewers were aware of the content in advance of transmission 
-HYP:  THEY'VE HAD THOUSANDS OF POSTS ABOUT THE STORY LINE AND HERE'S JUST ONE OF THEM EASTENDERS HAS A NEAR CONSTANT THEME OF WOMEN WHO HAVE HAD TRAUMAS HAPPENED TO THEM BEING PERMANENTLY DAMAGED INCAPABLE OF HEALTHY RELATIONSHIPS AND BOUND TO SUFFER FROM MENTAL ILLNESS THIS IS MISOGYNISTIC AND A HORRIBLE STEREOTYPE TO PROPAGATE NOT TO MENTION INACCURATE well here's what the executive producer of eastenders bryan kirkwood had to say about the baby swap plot we appreciate this is a challenging storyline and have taken care to ensure viewers were aware of the content in advance of transmission 
-Eval: I       I   I         I  I     I     I   I     I    I   I      I    I   I  I    I          I   I I    I        I     I  I     I   I    I   I       I        I  I    I     I           I       I         I  I       I             I   I     I  I      I    I      I       I    I  I            I   I I        I          I  I         I   I  I       I                                                                                                                                                                                                                                                            
+Scores: (#C #S #D #I) 41 0 0 0
+REF:  well here's what the executive producer of eastenders bryan kirkwood had to say about the baby swap plot we appreciate this is a challenging storyline and have taken care to ensure viewers were aware of the content in advance of transmission 
+HYP:  well here's what the executive producer of eastenders bryan kirkwood had to say about the baby swap plot we appreciate this is a challenging storyline and have taken care to ensure viewers were aware of the content in advance of transmission 
+Eval:                                                                                                                                                                                                                                                   
 
 

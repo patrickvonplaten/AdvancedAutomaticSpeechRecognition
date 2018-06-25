@@ -40,7 +40,7 @@ class Edge(object):
         self.weight = self.acousticScore + lmScale * self.languageScore
         self.posteriorProb = None
         self.startTime = None
-        selt.endTime = None
+        self.endTime = None
 
     def setNegativeLogPosteriorProb(self, posteriorProb):
         self.posteriorProb = posteriorProb
@@ -155,13 +155,12 @@ class WordGraph(object):
     def encodeWordGraph(self):
         node = self.nodes[0]
         while(len(node.outgoingEdges) is not 0):
-            timeStart = node.time
             bestEdge = min(node.outgoingEdges, key=attrgetter('posteriorProb'))
             node = self.nodes[bestEdge.nodeTo]
-            timeEnd = node.time + self.startTime
-            timeDiff = timeEnd - timeStart
-            self.encodedResults.append(((bestEdge.word[1:-1]), round(timeEnd, 3), round(timeDiff, 3)))
-        self.endTime = timeEnd
+            startTime = bestEdge.startTime + self.startTime
+            timeDiff = bestEdge.endTime - bestEdge.startTime  
+            self.encodedResults.append(((bestEdge.word[1:-1]), round(startTime, 3), round(timeDiff, 3)))
+        self.endTime = startTime + timeDiff
 
     def pruneWordGraph(self):
         for idx, edge in enumerate(self.edges):
