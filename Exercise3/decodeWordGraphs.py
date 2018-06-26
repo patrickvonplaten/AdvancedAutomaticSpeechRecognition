@@ -143,12 +143,10 @@ class WordGraph(object):
     def calculateProbability(self, nodes, probabilityType, nameOfEdgesList, nodeType):
         for node in nodes[1:]:
             value = float('inf') 
-            max = 0
+
             for edge in getattr(node, nameOfEdgesList):
                 edgeNode = self.nodes[getattr(edge, nodeType)]
                 value = self.getValueSum(value, getattr(edgeNode, probabilityType) + edge.weight)     
-                if(value > max):
-                    max = value
                 assert value > 0, "negative log probability cannot be < 0" 
             setattr(node, probabilityType, value)
 
