@@ -51,7 +51,8 @@ class Edge(object):
 
 class WordGraph(object):
 
-    def __init__(self, latticeFilePath, startTime, code, resultFilePath, pruningThreshold, lmScale):
+    def __init__(self, latticeFilePath, startTime, code, resultFilePath, pruningThreshold, lmScale, mode):
+        self.mode = mode
         self.nodes = []
         self.edges = []
         self.encodedResults = []
@@ -127,8 +128,13 @@ class WordGraph(object):
         self.fullPathProb = self.nodes[0].backwardProb
 
         bestNegativeLogPosteriorProb = float('inf')
+        if self.mode == 'log semiring':
+            fullPathProb = self.fullPathProb
+        elif self.mode == 'tropical semiring':
+            fullPathProb = 0
+
         for edge in self.edges:
-            negativeLogPosteriorProb = self.nodes[edge.nodeFrom].forwardProb + edge.weight + self.nodes[edge.nodeTo].backwardProb - self.fullPathProb
+            negativeLogPosteriorProb = self.nodes[edge.nodeFrom].forwardProb + edge.weight + self.nodes[edge.nodeTo].backwardProb - fullPathProb
             edge.setNegativeLogPosteriorProb(negativeLogPosteriorProb)
             if(negativeLogPosteriorProb < bestNegativeLogPosteriorProb):
                 bestNegativeLogPosteriorProb = negativeLogPosteriorProb
@@ -147,10 +153,13 @@ class WordGraph(object):
             setattr(node, probabilityType, value)
 
     def getValueSum(self, value, summedProb):
-        if value == float('inf'):
-            return summedProb 
-        else:
-            return - (math.log(1 + math.exp(-abs(summedProb - value))) - min(summedProb, value))
+        if self.mode == 'log semiring':
+            if value == float('inf'):
+                return summedProb 
+            else:
+                return - (math.log(1 + math.exp(-abs(summedProb - value))) - min(summedProb, value))
+        elif self.mode == 'tropical semiring':
+            return min(value, summedProb)
     
     def encodeWordGraph(self):
         node = self.nodes[0]
@@ -195,11 +204,11 @@ if __name__ == "__main__":
     os.remove('results.ctm')
 
     print("---------START DECODING---------")
-    wg1 = WordGraph('lattice.1.htk.gz', 1.151, '_0000001151_0000014843', 'results.ctm', pruningThreshold, lmScale)
-    wg2 = WordGraph('lattice.2.htk.gz', 16.353 , '_0000016353_0000024761', 'results.ctm', pruningThreshold, lmScale)
-    wg3 = WordGraph('lattice.3.htk.gz', 24.761, '_0000024761_0000044466', 'results.ctm', pruningThreshold, lmScale)
-    wg4 = WordGraph('lattice.4.htk.gz', 44.466, '_0000044466_0000063151', 'results.ctm', pruningThreshold, lmScale)
-    wg5 = WordGraph('lattice.5.htk.gz', 63.151, '_0000063151_0000078481', 'results.ctm', pruningThreshold, lmScale)
+    wg1 = WordGraph('lattice.1.htk.gz', 1.151, '_0000001151_0000014843', 'results.ctm', pruningThreshold, lmScale, 'log semiring')
+    wg2 = WordGraph('lattice.2.htk.gz', 16.353 , '_0000016353_0000024761', 'results.ctm', pruningThreshold, lmScale, 'log semiring')
+    wg3 = WordGraph('lattice.3.htk.gz', 24.761, '_0000024761_0000044466', 'results.ctm', pruningThreshold, lmScale, 'log semiring')
+    wg4 = WordGraph('lattice.4.htk.gz', 44.466, '_0000044466_0000063151', 'results.ctm', pruningThreshold, lmScale, 'log semiring')
+    wg5 = WordGraph('lattice.5.htk.gz', 63.151, '_0000063151_0000078481', 'results.ctm', pruningThreshold, lmScale, 'log semiring')
    
     print("Word Graph Density",(wg1.numEdges + wg2.numEdges + wg3.numEdges + wg4.numEdges + wg5.numEdges)/float(numWords))
     print("Pruning threshold", pruningThreshold)
