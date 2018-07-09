@@ -1,0 +1,58 @@
+
+
+		DUMP OF SYSTEM ALIGNMENT STRUCTURE
+
+System name:   results.ctm
+
+Speakers: 
+    0:  speaker_1_unknown
+    1:  nicky_campbell_unknown
+
+Speaker sentences   0:  speaker_1_unknown   #utts: 1
+id: (speaker_1_unknown-000)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 37 2 0 1
+REF:  thanks FOR taking the time to download this bbc radio five live podcast to find other PROGRAMMES you might be interested in * click bbc dot co dot uk slash five live where you'll also find our terms of use 
+HYP:  thanks TO  taking the time to download this bbc radio five live podcast to find other PROGRAMS   you might be interested in A click bbc dot co dot uk slash five live where you'll also find our terms of use 
+Eval:        S                                                                              S                                     I                                                                                 
+
+Speaker sentences   1:  nicky_campbell_unknown   #utts: 4
+id: (nicky_campbell_unknown-000)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 30 1 0 0
+REF:  this is nicky campbell and this is the podcast of your call where you have your say WE'RE live every weekday from nine am so don't phone or text in now 
+HYP:  this is nicky campbell and this is the podcast of your call where you have your say WELL  live every weekday from nine am so don't phone or text in now 
+Eval:                                                                                     S                                                                   
+
+id: (nicky_campbell_unknown-001)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 48 6 2 2
+REF:  ***** WE'RE talking this morning about the cot death ***** STORYLINE running on eastenders at the moment I- I- influential parenting website mumsnet has written to the bbc IN very strong terms to complain about the irresponsible and unintelligent WAY  the soap POR-   PORTRAYED a mother's reaction to the tragic loss of a child as they put it 
+HYP:  THERE WERE  talking this morning about the cot death STORY LINE      running on eastenders at the moment ** OF influential parenting website mumsnet has written to the bbc ** very strong terms to complain about the irresponsible and unintelligent AWAY the soap OPERAS BETRAYED  a mother's reaction to the tragic loss of a child as they put it 
+Eval: I     S                                              I     S                                             D  S                                                               D                                                                          S             S      S                                                                          
+
+id: (nicky_campbell_unknown-002)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 54 2 1 1
+REF:  they've had thousands of posts about the ***** STORYLINE and here's just one of them EA- eastenders has a near constant theme of women who have had traumas HAPPEN   to them being permanently damaged incapable of healthy relationships and bound to suffer from mental illness this is misogynistic and a horrible stereotype to propagate not to mention inaccurate 
+HYP:  they've had thousands of posts about the STORY LINE      and here's just one of them *** eastenders has a near constant theme of women who have had traumas HAPPENED to them being permanently damaged incapable of healthy relationships and bound to suffer from mental illness this is misogynistic and a horrible stereotype to propagate not to mention inaccurate 
+Eval:                                          I     S                                     D                                                                      S                                                                                                                                                                                                           
+
+id: (nicky_campbell_unknown-003)
+Labels: <o,unk>
+File: qrbc_eng_gb_20110106_104800_bbc_phonein_pod
+Channel: 1
+Scores: (#C #S #D #I) 41 0 0 0
+REF:  well here's what the executive producer of eastenders bryan kirkwood had to say about the baby swap plot we appreciate this is a challenging storyline and have taken care to ensure viewers were aware of the content in advance of transmission 
+HYP:  well here's what the executive producer of eastenders bryan kirkwood had to say about the baby swap plot we appreciate this is a challenging storyline and have taken care to ensure viewers were aware of the content in advance of transmission 
+Eval:                                                                                                                                                                                                                                                   
+
+
