@@ -1,0 +1,70 @@
+a) 
+--------------------------
+$ ./reportVocabSizeNumOfClasses.sh
+--------------------------
+vocab size = 1788
+number of classes = 100
+==========================
+
+b)
+--------------------------
+$ ./train_lm.sh i100-m100 16 20 1e-3
+resultFolder= ./models/results_i100-m100_16_20_1e-3
+--------------------------
+Perplexity = 145.0
+As we can see in the plot in the result folder, the learning rate stays 
+constant as long as the perplexity improves. If the perplexity does not improve 
+the learning rate is made smaller (newbob). This helps to prevent overfitting
+==========================
+
+c) 
+--------------------------
+$ ./train_lm.sh i100-m200 16 20 1e-3
+resultFolder= ./models/results_i100-m200_16_20_1e-3
+--------------------------
+Perplexity = 140.6
+Additional lstm nodes help to reduce the perplexity a bit.
+==========================
+
+d) 
+--------------------------
+$ ./train_lm.sh i100-m100 4 20 1e-3
+resultFolder= ./models/results_i100-m100_4_20_1e-3
+--------------------------
+Perplexity = 144.9 
+A smaller batch size slightly increases perplexity slightly.
+==========================
+
+e)
+--------------------------
+$ ./train_lm.sh i100-m100 16 20 3e-3
+resultFolder= ./models/results_i100-m100_16_20_3e-3
+--------------------------
+Perplexity = 117.6
+The learning rate heavily improves the Perplexity.
+So we can conclude that the learning rate was too low before
+==========================
+
+f)
+--------------------------
+$ ./train_lm.sh i100-m100-m100 16 20 1e-3
+resultFolder= ./models/results_i100-m100-m100_16_20_1e-3
+--------------------------
+Perplexity = 170.6
+An additional neural network layer leads to the worst 
+perplexity so far. Probably the network overfitted here.
+==========================
+
+g)
+--------------------------
+$ ./train_lm.sh i100-m100-m100 16 20 1e-3
+resultFolder= ./models/results_i100-m100_16_20_1e-3
+--------------------------
+Perplexity = 
+
+==========================
+
+
+
+
+ 
