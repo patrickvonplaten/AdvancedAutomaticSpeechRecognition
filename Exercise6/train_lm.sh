@@ -3,8 +3,6 @@
 # Please change the number of threads if needed:
 export OMP_NUM_THREADS=2
 rwth_lm='/work/asr2/irie/adv-asr-exercise/rwthlm'
-#curDir=$(pwd)
-#rwth_lm="${curDir}/rwthlm"
 DIR="./"
 
 batchSize=16
@@ -26,3 +24,5 @@ $rwth_lm \
     --sequence-length 500 \
     --word-wrapping verbatim \
     models/${resultsFolder}/name-i100-m100 >> models/${resultsFolder}/results.txt
+
+python ${Dir}/plotTraining.py models/${resultsFolder}/results.txt models/${resultsFolder}
