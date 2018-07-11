@@ -11,7 +11,8 @@ class Results(object):
         self.perplexities = []
         self.epochs = []
         self.parse()
-        self.bestPerplexity = self.perplexity[-1]
+        print(self.perplexities)
+        self.bestPerplexity = self.perplexities[-1]
 
     def parse(self):
         with open(self.resultsFilePath, 'r') as file:
@@ -40,13 +41,14 @@ class Results(object):
         fig.savefig(outputDir + '/resultsPlotted.png')
 
     def writeBestPerplexity(self):
-        with open(outputDir + 'bestPerplexity.txt','w') as file:
+        with open(outputDir + '/bestPerplexity.txt','w') as file:
             file.write(str(self.bestPerplexity))
             
 
 if __name__ == "__main__":
     resultsFilePath=str(sys.argv[1])
     outputDir=str(sys.argv[2])
-    result = Results(resultsFilePath)
+    print(resultsFilePath)
+    result = Results(resultsFilePath, outputDir)
     result.plot()
     result.writeBestPerplexity()

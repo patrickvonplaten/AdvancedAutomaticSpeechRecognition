@@ -10,6 +10,8 @@ batchSize=${2} #default 16
 maxEpoch=${3} #default 20
 learningRate=${4} #default 1e-3
 
+modelName="name-i100-m${numLSTMLayerNodes}"
+
 mkdir -p models
 resultsFolder="results_${batchSize}_${maxEpoch}_${learningRate}"
 mkdir -p models/${resultsFolder}
@@ -24,6 +26,8 @@ $rwth_lm \
     --learning-rate ${learningRate} \
     --sequence-length 500 \
     --word-wrapping verbatim \
-    models/${resultsFolder}/name-i100-m${numLSTMLayerNodes} >> models/${resultsFolder}/results.txt
+    models/${modelName} >> models/${resultsFolder}/results.txt
 
-python ${Dir}/plotTraining.py models/${resultsFolder}/results.txt models/${resultsFolder}
+python ${DIR}/plotTraining.py models/${resultsFolder}/results.txt models/${resultsFolder}
+
+echo "Best perplexity: $(cat models/${resultsFolder}/bestPerplexity.txt )"
