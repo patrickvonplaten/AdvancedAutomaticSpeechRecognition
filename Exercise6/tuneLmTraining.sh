@@ -1,9 +1,9 @@
 #!/bin/bash
 
-declare -a arr1=("m100")
-declare -a arr2=("16")
-declare -a arr3=("20")
-declare -a arr4=("3e-3" "2.5e-3")
+declare -a arr1=("m100" "m200" "m50-m50") #architecture
+declare -a arr2=("4" "16") #batch size
+declare -a arr3=("20") #epochs 
+declare -a arr4=("5e-2" "1e-2" "5e-3") #learning rate
 
 echo "Start tuning" > tuning.txt
 echo "============" >> tuning.txt
