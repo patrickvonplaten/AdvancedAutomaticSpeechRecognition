@@ -7,16 +7,22 @@ rwth_lm='/work/asr2/irie/adv-asr-exercise/rwthlm'
 #rwth_lm="${curDir}/rwthlm"
 DIR="./"
 
+batchSize=16
+maxEpoch=20
+learningRate=1e-3
+
 mkdir -p models
+resultsFolder="results_${batchSize}_${maxEpoch}_${learningRate}"
+mkdir -p models/${resultsFolder}
 
 $rwth_lm \
     --vocab vocab.txt \
     --unk \
     --train train.txt.gz \
     --dev validation.txt.gz \
-    --batch-size 16 \
-    --max-epoch 20 \
-    --learning-rate 1e-3 \
+    --batch-size ${batchSize} \
+    --max-epoch ${maxEpoch} \
+    --learning-rate ${learningRate} \
     --sequence-length 500 \
     --word-wrapping verbatim \
-    models/name-i100-m100
+    models/${resultsFolder}/name-i100-m100 >> models/${resultsFolder}/results.txt
