@@ -5,9 +5,10 @@ export OMP_NUM_THREADS=2
 rwth_lm='/work/asr2/irie/adv-asr-exercise/rwthlm'
 DIR="./"
 
-batchSize=16
-maxEpoch=20
-learningRate=1e-3
+numLSTMLayerNodes=${1}
+batchSize=${2}
+maxEpoch=${3}
+learningRate=${4}
 
 mkdir -p models
 resultsFolder="results_${batchSize}_${maxEpoch}_${learningRate}"
@@ -23,6 +24,6 @@ $rwth_lm \
     --learning-rate ${learningRate} \
     --sequence-length 500 \
     --word-wrapping verbatim \
-    models/${resultsFolder}/name-i100-m100 >> models/${resultsFolder}/results.txt
+    models/${resultsFolder}/name-i100-m${numLSTMLayerNodes} >> models/${resultsFolder}/results.txt
 
 python ${Dir}/plotTraining.py models/${resultsFolder}/results.txt models/${resultsFolder}
