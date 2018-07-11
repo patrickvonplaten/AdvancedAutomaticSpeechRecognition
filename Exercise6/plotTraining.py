@@ -11,7 +11,6 @@ class Results(object):
         self.perplexities = []
         self.epochs = []
         self.parse()
-        print(self.perplexities)
         self.bestPerplexity = self.perplexities[-1]
 
     def parse(self):

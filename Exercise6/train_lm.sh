@@ -5,15 +5,15 @@ export OMP_NUM_THREADS=2
 rwth_lm='/work/asr2/irie/adv-asr-exercise/rwthlm'
 DIR="./"
 
-numLSTMLayerNodes=${1} #default 100
+modelArchitecture=${1} #default 100
 batchSize=${2} #default 16
 maxEpoch=${3} #default 20
 learningRate=${4} #default 1e-3
 
-modelName="name-i100-m${numLSTMLayerNodes}"
+modelName="name-${modelArchitecture}"
 
 mkdir -p models
-resultsFolder="results_${batchSize}_${maxEpoch}_${learningRate}"
+resultsFolder="results_${modelArchitecture}_${batchSize}_${maxEpoch}_${learningRate}"
 mkdir -p models/${resultsFolder}
 
 $rwth_lm \
@@ -29,5 +29,7 @@ $rwth_lm \
     models/${modelName} >> models/${resultsFolder}/results.txt
 
 python ${DIR}/plotTraining.py models/${resultsFolder}/results.txt models/${resultsFolder}
+
+rm models/name-*
 
 echo "Best perplexity: $(cat models/${resultsFolder}/bestPerplexity.txt )"
