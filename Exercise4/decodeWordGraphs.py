@@ -15,6 +15,7 @@ class Node(object):
         self.forwardProb = None
         self.backwardProb = None
         self.endTime = None
+        self.valueForViterbiResult = 0
 
     def addToIncomingEdges(self, edge):
         self.incomingEdges.append(edge)
@@ -67,7 +68,7 @@ class WordGraph(object):
         self.numNodes = None
         self.numEdges = None
         self.fullPathProb = None
-        self.startTime = float(startTime)
+        self.startTime = startTime
         self.bestNegativeLogPosteriorProb = None
         self.timeWordPosteriors = None
         self.pruningThreshold = pruningThreshold
@@ -76,6 +77,7 @@ class WordGraph(object):
         self.confMeasFilePath = confMeasFilePath
         self.confMeasFilePath = confMeasFilePath
         self.parseLattice(latticeFilePath)
+#        self.sortNodesTopologically() needs to be implemented
         self.setNodesEndTime()
         self.endTime = self.nodes[-1].endTime
         self.runForwardBackwardAlgorithm()
@@ -136,7 +138,7 @@ class WordGraph(object):
 
     def parseNode(self, line):
         lineArray = [x[2:] for x in line.split()] 
-        return Node(index=int(lineArray[0]), time=float(lineArray[1]))
+        return Node(index=int(lineArray[0]), time=int(100*(lineArray[1])))
         
     def parseLmScale(self, line): 
         return float(line.split('=')[1])
@@ -222,14 +224,14 @@ class WordGraph(object):
                 del self.edges[idx]
         self.numEdges = len(self.edges)
 
-    def decodeWordGraph(self):
+    def decodeWordGraph(self): # Proper viterbi search should be done here! 
         node = self.nodes[0]
         while(len(node.outgoingEdges) is not 0):
             bestEdge = min(node.outgoingEdges, key=attrgetter('posteriorProb'))
             node = self.nodes[bestEdge.nodeTo]
             startTime = bestEdge.startTime + self.startTime
             timeDiff = bestEdge.endTime - bestEdge.startTime  
-            self.encodedResults.append((bestEdge.word[1:-1], round(startTime, 3), round(timeDiff, 3), bestEdge.confidenceMeasure))
+            self.encodedResults.append((bestEdge.word[1:-1], round(startTime/float(100), 3), round(timeDiff/float(100), 3), bestEdge.confidenceMeasure))
 
     def writeConfidenceMeasuresToFile(self):
         with open(self.confMeasFilePath, 'a') as confMeasFile:
@@ -239,7 +241,7 @@ class WordGraph(object):
     def writeResultsToCTMFile(self):
         with open(self.resultFilePath, 'a') as resultFile:
             resultFile.write(";; <name> <track> <start> <duration> <word>\n")
-            resultFile.write(";; QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD/QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD"+self.code+" ("+str(self.startTime)+"-" + str(self.endTime) +")\n")
+            resultFile.write(";; QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD/QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD"+self.code+" ("+str(self.startTime/float(100))+"-" + str(self.endTime/float(100)) +")\n")
             for tupleResult in self.encodedResults:
                 if(tupleResult[0] != "!NULL" and tupleResult[0] != "[SILENCE]" and tupleResult[0] != "[NOISE]"):
                     resultFile.write("QRBC_ENG_GB_20110106_104800_BBC_PHONEIN_POD 1 " + str(tupleResult[1]) + " " + str(tupleResult[2]) + " " + tupleResult[0] + "\n")
