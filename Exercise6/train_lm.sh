@@ -5,10 +5,10 @@ export OMP_NUM_THREADS=2
 rwth_lm='/work/asr2/irie/adv-asr-exercise/rwthlm'
 DIR="./"
 
-numLSTMLayerNodes=${1}
-batchSize=${2}
-maxEpoch=${3}
-learningRate=${4}
+numLSTMLayerNodes=${1} #default 100
+batchSize=${2} #default 16
+maxEpoch=${3} #default 20
+learningRate=${4} #default 1e-3
 
 mkdir -p models
 resultsFolder="results_${batchSize}_${maxEpoch}_${learningRate}"
