@@ -57,11 +57,15 @@ perplexity so far. Probably the network overfitted here.
 
 g)
 --------------------------
-$ ./train_lm.sh i100-m100-m100 16 20 1e-3
-resultFolder= ./models/results_i100-m100_16_20_1e-3
+$ ./tuneLmTraining.sh
+resultFolder= ./models/results_i100-m50-m50_4_20_5e-2
 --------------------------
-Perplexity = 
-
+BestPerplexity = 90.321762085 
+BestParameters:
+-architecture=name-i100-m50-m50 
+-batchSize=4 
+-epochs=20 
+-learningRate=5e-2
 ==========================
 
 

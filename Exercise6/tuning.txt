@@ -1,0 +1,74 @@
+Start tuning
+============
+------------------
+./train_lm.sh i100-m100 4 20 5e-2
+models/results_i100-m100_4_20_5e-2/results.txt
+Best perplexity: 90.5476379395
+------------------
+./train_lm.sh i100-m100 4 20 1e-2
+models/results_i100-m100_4_20_1e-2/results.txt
+Best perplexity: 93.5673065186
+------------------
+./train_lm.sh i100-m100 4 20 5e-3
+models/results_i100-m100_4_20_5e-3/results.txt
+Best perplexity: 114.630348206
+------------------
+./train_lm.sh i100-m100 16 20 5e-2
+models/results_i100-m100_16_20_5e-2/results.txt
+Best perplexity: inf
+------------------
+./train_lm.sh i100-m100 16 20 1e-2
+models/results_i100-m100_16_20_1e-2/results.txt
+Best perplexity: 92.5866851807
+------------------
+./train_lm.sh i100-m100 16 20 5e-3
+models/results_i100-m100_16_20_5e-3/results.txt
+Best perplexity: 120.200332642
+------------------
+./train_lm.sh i100-m200 4 20 5e-2
+models/results_i100-m200_4_20_5e-2/results.txt
+Best perplexity: 109.478569031
+------------------
+./train_lm.sh i100-m200 4 20 1e-2
+models/results_i100-m200_4_20_1e-2/results.txt
+Best perplexity: 95.1264648438
+------------------
+./train_lm.sh i100-m200 4 20 5e-3
+models/results_i100-m200_4_20_5e-3/results.txt
+Best perplexity: 118.861373901
+------------------
+./train_lm.sh i100-m200 16 20 5e-2
+models/results_i100-m200_16_20_5e-2/results.txt
+Best perplexity: inf
+------------------
+./train_lm.sh i100-m200 16 20 1e-2
+models/results_i100-m200_16_20_1e-2/results.txt
+Best perplexity: 99.1563415527
+------------------
+./train_lm.sh i100-m200 16 20 5e-3
+models/results_i100-m200_16_20_5e-3/results.txt
+Best perplexity: 118.860473633
+------------------
+./train_lm.sh i100-m50-m50 4 20 5e-2
+models/results_i100-m50-m50_4_20_5e-2/results.txt
+Best perplexity: 90.321762085
+------------------
+./train_lm.sh i100-m50-m50 4 20 1e-2
+models/results_i100-m50-m50_4_20_1e-2/results.txt
+Best perplexity: 153.42527771
+------------------
+./train_lm.sh i100-m50-m50 4 20 5e-3
+models/results_i100-m50-m50_4_20_5e-3/results.txt
+Best perplexity: 170.76133728
+------------------
+./train_lm.sh i100-m50-m50 16 20 5e-2
+models/results_i100-m50-m50_16_20_5e-2/results.txt
+Best perplexity: 155.90953064
+------------------
+./train_lm.sh i100-m50-m50 16 20 1e-2
+models/results_i100-m50-m50_16_20_1e-2/results.txt
+Best perplexity: 154.38885498
+------------------
+./train_lm.sh i100-m50-m50 16 20 5e-3
+models/results_i100-m50-m50_16_20_5e-3/results.txt
+Best perplexity: 161.661331177

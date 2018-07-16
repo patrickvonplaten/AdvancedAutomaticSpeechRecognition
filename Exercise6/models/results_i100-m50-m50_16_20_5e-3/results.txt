@@ -1,0 +1,65 @@
+Reading vocabulary from file 'vocab.txt' ...
+Randomly initializing neural network weights ...
+Reading development data from file 'validation.txt.gz' ...
+Reading training data from file 'train.txt.gz' ...
+Training ...
+Shuffling ... done
+epoch 1 took 0.03 minutes
+development perplexity =  231.072357177734375, learning rate = 4.999999888241291e-03
+Shuffling ... done
+epoch 2 took 0.03 minutes
+development perplexity =  174.908630371093750, learning rate = 4.999999888241291e-03
+Shuffling ... done
+epoch 3 took 0.03 minutes
+development perplexity =  181.765914916992188, learning rate = 4.999999888241291e-03
+Shuffling ... done
+epoch 4 took 0.03 minutes
+development perplexity =  171.538101196289062, learning rate = 2.499999944120646e-03
+Shuffling ... done
+epoch 5 took 0.02 minutes
+development perplexity =  166.498367309570312, learning rate = 2.499999944120646e-03
+Shuffling ... done
+epoch 6 took 0.03 minutes
+development perplexity =  167.435119628906250, learning rate = 2.499999944120646e-03
+Shuffling ... done
+epoch 7 took 0.03 minutes
+development perplexity =  161.656555175781250, learning rate = 1.249999972060323e-03
+Shuffling ... done
+epoch 8 took 0.03 minutes
+development perplexity =  163.271606445312500, learning rate = 1.249999972060323e-03
+Shuffling ... done
+epoch 9 took 0.03 minutes
+development perplexity =  166.815841674804688, learning rate = 6.249999860301614e-04
+Shuffling ... done
+epoch 10 took 0.03 minutes
+development perplexity =  163.654708862304688, learning rate = 3.124999930150807e-04
+Shuffling ... done
+epoch 11 took 0.03 minutes
+development perplexity =  163.385391235351562, learning rate = 1.562499965075403e-04
+Shuffling ... done
+epoch 12 took 0.03 minutes
+development perplexity =  162.511428833007812, learning rate = 7.812499825377017e-05
+Shuffling ... done
+epoch 13 took 0.03 minutes
+development perplexity =  162.140823364257812, learning rate = 3.906249912688509e-05
+Shuffling ... done
+epoch 14 took 0.03 minutes
+development perplexity =  161.887649536132812, learning rate = 1.953124956344254e-05
+Shuffling ... done
+epoch 15 took 0.03 minutes
+development perplexity =  161.775299072265625, learning rate = 9.765624781721272e-06
+Shuffling ... done
+epoch 16 took 0.03 minutes
+development perplexity =  161.717758178710938, learning rate = 4.882812390860636e-06
+Shuffling ... done
+epoch 17 took 0.03 minutes
+development perplexity =  161.686538696289062, learning rate = 2.441406195430318e-06
+Shuffling ... done
+epoch 18 took 0.02 minutes
+development perplexity =  161.672821044921875, learning rate = 1.220703097715159e-06
+Shuffling ... done
+epoch 19 took 0.03 minutes
+development perplexity =  161.665328979492188, learning rate = 6.103515488575795e-07
+Shuffling ... done
+epoch 20 took 0.03 minutes
+development perplexity =  161.661331176757812, learning rate = 3.051757744287897e-07
