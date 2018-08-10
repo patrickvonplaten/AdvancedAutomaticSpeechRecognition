@@ -6,4 +6,4 @@ In case you find any errors in the solutions of the exercises feel free to write
 - [x] Exercise 3 graph decoding uses greedy approach -> should use viterbi decoding
 - [x] Exercise 4 graph decoding uses greedy approach -> should use viterbi decoding, use np.log1p() instead of customized getValue function, apply graph rescoring using confidence measures
 - [x] Exercise 5
-- [ ] Exercise 6
+- [x] Exercise 6
